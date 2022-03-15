@@ -1,7 +1,11 @@
-const johnImg = "./images/image-john.jpg";
+// const johnImg = "./images/image-john.jpg";
+const johnImg =
+  "https://abdelghafour122.github.io/Coding-Bootcamp-Testimonial-Slider/images/image-john.jpg";
 const johnQuote =
   "“ If you want to lay the best foundation possible I’d recommend taking this course. The depth the instructors go into is incredible. I now feel so confident about starting up as a professional developer. ”";
-const tanyaImg = "./images/image-tanya.jpg";
+// const tanyaImg = "./images/image-tanya.jpg";
+const tanyaImg =
+  "https://abdelghafour122.github.io/Coding-Bootcamp-Testimonial-Slider/images/image-tanya.jpg";
 const tanyaQuote =
   "“ I’ve been interested in coding for a while but never taken the jump, until now. I couldn’t recommend this course enough. I’m now in the job of my dreams and so excited about the future. ”";
 
