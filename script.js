@@ -9,9 +9,7 @@ const arrows = document.querySelectorAll(".controls span");
 const portrait = document.getElementById("portrait");
 const quote = document.querySelector("p");
 
-// console.log(arrows);
-// console.log(portrait.src);
-// console.log(quote);
+console.log(portrait.src);
 
 arrows.forEach((arrow) => {
   arrow.addEventListener("click", () => {
