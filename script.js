@@ -17,10 +17,10 @@ console.log(portrait.src);
 
 arrows.forEach((arrow) => {
   arrow.addEventListener("click", () => {
-    if (quote.innerText === tanyaQuote && portrait.src === tanyaImg) {
+    if (quote.innerText === tanyaQuote && portrait.src == tanyaImg) {
       quote.innerText = johnQuote;
       portrait.src = johnImg;
-    } else if (quote.innerText === johnQuote && portrait.src === johnImg) {
+    } else if (quote.innerText === johnQuote && portrait.src == johnImg) {
       quote.innerText = tanyaQuote;
       portrait.src = tanyaImg;
     }
