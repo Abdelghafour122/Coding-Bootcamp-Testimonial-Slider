@@ -9,19 +9,15 @@ const arrows = document.querySelectorAll(".controls span");
 const portrait = document.getElementById("portrait");
 const quote = document.querySelector("p");
 
-console.log(portrait.src);
-
 arrows.forEach((arrow) => {
   arrow.addEventListener("click", () => {
     console.log(portrait.src.toString().includes(tanyaImg));
     if (portrait.src.toString().includes(tanyaImg)) {
       quote.innerText = johnQuote;
-      // portrait.src = johnImg;
       portrait.src =
         "https://abdelghafour122.github.io/Coding-Bootcamp-Testimonial-Slider/images/image-john.jpg";
     } else if (portrait.src.toString().includes(johnImg)) {
       quote.innerText = tanyaQuote;
-      // portrait.src = tanyaImg;
       portrait.src =
         "https://abdelghafour122.github.io/Coding-Bootcamp-Testimonial-Slider/images/image-tanya.jpg";
     }
