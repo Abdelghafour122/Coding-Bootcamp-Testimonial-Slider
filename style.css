@@ -58,8 +58,11 @@ body {
 }
 @media (max-width: 768px) {
   .global .text::after {
-    background-position: 95% 36%;
+    background-position: 95% 100%;
     background-size: 86% 15%;
+    bottom: -20%;
+    left: -13%;
+    height: 100%;
   }
 }
 
