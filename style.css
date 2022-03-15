@@ -118,7 +118,7 @@ body {
   .global .image {
     left: 0;
     margin-bottom: 57px;
-    z-index: 99;
+    z-index: 999;
   }
 }
 
