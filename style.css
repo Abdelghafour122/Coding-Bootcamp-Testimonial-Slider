@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap");
+
+:root {
+  --dark-blue: hsl(240, 38%, 20%);
+  --grayish-blue: hsl(240, 18%, 77%);
+
+  --reg-fs: 32px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter";
+}
+
+.global {
+  display: flex;
+  align-items: center;
+  margin: 60px auto;
+  width: 1111px;
+  position: relative;
+}
+@media (max-width: 768px) {
+  .global {
+    flex-direction: column;
+    align-items: center;
+    width: unset;
+  }
+}
+
+.global .text {
+  display: flex;
+  flex-direction: column;
+  background-image: url(./images/pattern-quotes.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  z-index: 2;
+  background-position: 18% -4%;
+  background-size: 19%;
+}
+
+.global .text::after {
+  content: "";
+  position: absolute;
+  bottom: -74%;
+  left: -13%;
+  height: 100%;
+  width: 100%;
+  background-image: url(./images/pattern-curve.svg);
+  background-repeat: no-repeat;
+  background-position: 6% 100%;
+  background-size: 82% 41%;
+}
+@media (max-width: 768px) {
+  .global .text::after {
+    background-position: 95% 36%;
+    background-size: 86% 15%;
+  }
+}
+
+@media (max-width: 768px) {
+  .global .text {
+    order: 2;
+    position: unset;
+    align-items: center;
+    background-position: 50% 3%;
+  }
+}
+
+.global .text p {
+  font-size: var(--reg-fs);
+  font-weight: 300;
+  max-width: 658px;
+  margin-top: 64px;
+}
+@media (max-width: 768px) {
+  .global .text p {
+    font-size: 20px;
+    text-align: center;
+    max-width: 348px;
+    margin-top: 36px;
+  }
+}
+
+.global .text .info {
+  font-size: 20px;
+}
+@media (max-width: 768px) {
+  .global .text .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+  }
+}
+
+.global .text .info #name {
+  font-weight: 700;
+  color: black;
+}
+.global .text .info #proff {
+  color: var(--grayish-blue);
+}
+
+.global .image {
+  position: relative;
+  left: 51.4%;
+}
+@media (max-width: 768px) {
+  .global .image {
+    left: 0;
+    margin-bottom: 57px;
+  }
+}
+
+.global .image::before {
+  content: "";
+  position: absolute;
+  background-image: url(./images/pattern-bg.svg);
+  background-repeat: no-repeat;
+  background-size: 98% 99%;
+  height: 122%;
+  width: 130%;
+  top: -12%;
+  left: -16%;
+  background-position: 180% 32%;
+  z-index: -1;
+}
+@media (max-width: 768px) {
+  .global .image::before {
+    background-position: 102% -5%;
+  }
+}
+
+.global .image img#portrait {
+  height: 540px;
+  width: 540px;
+  border-radius: 5px;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.096), 0 41px 34px rgba(0, 0, 0, 0.103);
+}
+@media (max-width: 768px) {
+  .global .image img#portrait {
+    height: 255px;
+    width: 255px;
+  }
+}
+
+.global .image .controls {
+  position: absolute;
+  bottom: -26px;
+  left: 62px;
+  width: 115px;
+  height: 60px;
+  background-color: white;
+  border-radius: 100px;
+}
+@media (max-width: 768px) {
+  .global .image .controls {
+    width: 80px;
+    height: 40px;
+    left: calc(50% - 40px);
+    bottom: -18px;
+  }
+}
+
+.global .image .controls span {
+  height: 100%;
+  width: 47%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.global .image .controls img {
+  height: 20px;
+  width: 12px;
+}
+
+@media (max-width: 768px) {
+  .global .image .controls img {
+    height: 14px;
+    width: 8px;
+  }
+}
+
+.attribution {
+  position: absolute;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  font-size: 17px;
+  z-index: 2;
+}
+
+@media (max-width: 768px) {
+  .attribution {
+    font-size: 11px;
+  }
+}
+
+.attribution a {
+  color: royalblue;
+  font-family: inherit;
+  font-weight: 700;
+  text-decoration: underline dotted;
+}
